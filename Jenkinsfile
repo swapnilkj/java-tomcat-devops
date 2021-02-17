@@ -8,6 +8,7 @@ pipeline {
             post {
                 success {
                     echo "Now Archiving the Artifacts...."
+                    sh "/bin/pwd"
                     archiveArtifacts artifacts: '**/*.war'
                 }
             }
