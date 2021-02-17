@@ -9,7 +9,7 @@ pipeline {
                 success {
                     echo "Now Archiving the Artifacts...."
                     sh "/bin/pwd"
-                    archiveArtifacts artifacts: '**/target/*.war'
+                    archiveArtifacts artifacts: '**/*.war'
                 }
             }
         }
