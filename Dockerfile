@@ -1,5 +1,4 @@
 FROM tomcat:8.0
-RUN mkdir -p /test/code/
-ADD cp -a **/*.war /test/code/
+ADD **/*.war /usr/local/tomcat/webapps/
 EXPOSE 8080
 CMD ["catalina.sh", "run"]
